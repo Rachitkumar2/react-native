@@ -16,7 +16,7 @@ export default function HomeScreen() {
     },[])
 
   return (
-    <SafeAreaView className='bg-white pt-5'>
+    <SafeAreaView className='flex-1 bg-white pt-5'>
 
         {/* Header */}
         <View className='flex-row pb-3 items-center mx-4 space-x-2  gap-2'>
@@ -28,9 +28,9 @@ export default function HomeScreen() {
                 className='h-8 w-8  bg-gray-300 rounded-full'
             />
             <View className='flex-1'>
-                <Text className='font-bold text-xs text-gray-400'>Deliver Now!</Text>
+                <Text className='font-gilroy font-bold text-xs text-gray-400'>Deliver Now!</Text>
                 <View className='flex-row items-center'>
-                    <Text className='font-bold text-xl'>Current Location</Text>
+                    <Text className='font-gilroy font-bold text-xl'>Current Location</Text>
                     <Ionicons name="chevron-down" size={20} color="#00CCBB" />
                 </View>
             </View>
@@ -53,9 +53,9 @@ export default function HomeScreen() {
 
             </View>
             {/* Body */}
-            <ScrollView className='bg-gray-100'
+            <ScrollView className='flex-1 bg-gray-100'
                 contentContainerStyle={{
-                    paddingBottom:20,
+                    paddingBottom:100,
                 }}
             >
                 
