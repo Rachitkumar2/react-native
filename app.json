@@ -24,6 +24,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6a94e08b-f2f4-4418-92e6-cf4df26d529f"
+      }
+    },
+    "owner": "rachitk20"
   }
 }

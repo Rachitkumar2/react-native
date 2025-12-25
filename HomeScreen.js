@@ -3,6 +3,8 @@ import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons , FontAwesome, Feather } from '@expo/vector-icons';
+import Categories from './Components/Categories';
+import FeaturedRow from './Components/FeaturedRow';
 
 export default function HomeScreen() {
     const navigation = useNavigation();
@@ -17,7 +19,7 @@ export default function HomeScreen() {
     <SafeAreaView className='bg-white pt-5'>
 
         {/* Header */}
-        <View className='flex-row pb-3 items-center mx-4 space-x-2 px-4 gap-2'>
+        <View className='flex-row pb-3 items-center mx-4 space-x-2  gap-2'>
             <Image
                 source={{
                     uri:'https://images.unsplash.com/photo-1618336753974-aae8e04506aa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -51,11 +53,34 @@ export default function HomeScreen() {
 
             </View>
             {/* Body */}
-            <ScrollView>
+            <ScrollView className='bg-gray-100'
+                contentContainerStyle={{
+                    paddingBottom:20,
+                }}
+            >
+                
                 {/* Categories */}
-
+                <Categories />
 
                 {/* Featured Rows */}
+                <FeaturedRow
+                    id='1'
+                    title='Featured'
+                    description="Paid placements from our partners"
+                    
+                 />
+                <FeaturedRow
+                    id='2'
+                    title='Tasty Discounts'
+                    description="Paid placements from our partners"
+                    
+                 />
+                <FeaturedRow
+                    id='3'
+                    title='Offers near you!'
+                    description="Paid placements from our partners"
+                    
+                 />
 
             </ScrollView>
     </SafeAreaView>
